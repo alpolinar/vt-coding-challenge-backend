@@ -1,5 +1,5 @@
-const { Client } = require("pg");
 require("dotenv").config();
+const { Client } = require("pg");
 
 module.exports.getClient = async () => {
     const client = new Client({

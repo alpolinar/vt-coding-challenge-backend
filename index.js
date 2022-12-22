@@ -6,7 +6,8 @@ const bodyParser = require("body-parser");
 const blogRoutes = require("./routes/blogRoutes");
 
 app.use(cors());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 app.use("/api/blog", blogRoutes);
 
 const listener = app.listen(process.env.PORT || 3000, () => {

@@ -2,19 +2,20 @@
 
 Before you can run the server, make your to install the devependencies by running the command: `npm install`
 
-The application requires a .ENV file with the following variables:\
+The application requires a `.env` file with the following variables:
 
-`PORT=8080`\
-`PG_HOST, PG_PORT, PG_USER, PG_PASSWORD, PG_DATABASE`
+`PORT=8080`
 
 The PostgreSQL variable values used are provided in the coding challange docs.
+
+`PG_HOST, PG_PORT, PG_USER, PG_PASSWORD, PG_DATABASE`
 
 ## Starting the server
 
 ### `npm run start`
 
-Runs the Node application
+Runs the server
 
 ### `npm run dev`
 
-Runs the Node application with nodemon
+Runs the server with nodemon
